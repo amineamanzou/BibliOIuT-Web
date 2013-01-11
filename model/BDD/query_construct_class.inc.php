@@ -18,3 +18,4 @@ $query_get_Livre = "SELECT `titreLivre` , `auteurLivre` , `motTag`
 					FROM Livre, Tag
 					WHERE `Livre`.`idLivre` = `Tag`.`fk_idLivre`
 					AND `Livre`.`idLivre` = :idLivre ;";
+?>

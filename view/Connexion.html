@@ -1,0 +1,31 @@
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span6 offset3">
+				<form  class="form-horizontal" id="login_form" name="userlogin" method="post" action="authldap.php">
+					<legend>Login</legend>
+					<div class="control-group">
+						<label class="control-label" for="login">Login</label>
+						<div class="controls">
+							<input type="text" id="login" name="login" placeholder="Login"  >
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="nom">Password</label>
+						<div class="controls">
+							<input type="password" id="passwd" name="passwd" placeholder="Mot de passe" >
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+
+							<input type="submit" class="btn"  id="sauver" value="Envoyer">
+						</div>
+					</div>
+			
+					<input type='hidden' name='site' value='/stage/index.php' />				</form>
+			</div>	<!--innerbox-->
+		</div>	<!--shadow-->
+	</div>
+	<p style="text-align:center;">Utilisez votre login et mot de passe eCampus UPEC.<br /></p>
+</body>

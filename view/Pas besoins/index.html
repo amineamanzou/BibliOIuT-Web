@@ -1,0 +1,59 @@
+<HTML>
+<head>
+	<title>Home</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+<link rel="stylesheet" type="text/css" href="./view/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./view/bootstrap/css/bootstrap-responsive.css">
+		<link rel="stylesheet" type="text/css" href="./view/bootstrap/css/docs.css">
+		<script type="text/javascript" charset="utf-8" language="javascript" src="./view/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" language="javascript" src="./view/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="hero-unit hidden-phone">
+				<h1>
+					Bibli[O/I]uT
+				</h1>
+				<p>Bienvenue sur le site interne de la<strong> bibliothèque de l'IUT</strong> de Sénart Fontainebleau.</p>
+				<img src="./view/img/hall.png" class="img-rounded">
+
+			</div>
+
+		<div class="row">
+			<div class="span6 offset3">
+				<form  class="form-horizontal" id="login_form" name="userlogin" method="post" action="authldap.php">
+					<legend>Login</legend>
+					<div class="control-group">
+						<label class="control-label" for="login">Login</label>
+						<div class="controls">
+							<input type="text" id="login" name="login" placeholder="Login"  >
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="nom">Password</label>
+						<div class="controls">
+							<input type="password" id="passwd" name="passwd" placeholder="Mot de passe" >
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+
+							<input type="submit" class="btn"  id="sauver" value="Envoyer">
+						</div>
+					</div>
+
+
+
+
+
+					
+					<input type='hidden' name='site' value='/stage/index.php' />				</form>
+			</div>	<!--innerbox-->
+		</div>	<!--shadow-->
+	</div>
+	<p style="text-align:center;">Utilisez votre login et mot de passe linux du réseau de l'IUT.<br />Votre navigateur devra accepter les cookies de session pour www.iut-fbleau.fr<noscript><br />Vous devriez aussi activer javascript...</noscript><!--[if lt IE 7]><br />et vous devriez VRAIMENT changer de navigateur<![endif]--></p>
+
+
+</body>
+</html>

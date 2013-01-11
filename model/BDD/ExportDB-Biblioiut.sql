@@ -140,10 +140,10 @@ INSERT INTO `Reservation` (`fk_idLivre`, `fk_idMembre`, `dateReservation`) VALUE
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Tags`
+-- Structure de la table `Tag`
 --
 
-CREATE TABLE IF NOT EXISTS `Tags` (
+CREATE TABLE IF NOT EXISTS `Tag` (
   `idTag` int(11) NOT NULL AUTO_INCREMENT,
   `motTag` varchar(255) DEFAULT NULL,
   `fk_idLivre` int(11) DEFAULT NULL,
@@ -181,7 +181,7 @@ ALTER TABLE `Reservation`
   ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`fk_idMembre`) REFERENCES `Membre` (`idMembre`);
 
 --
--- Contraintes pour la table `Tags`
+-- Contraintes pour la table `Tag`
 --
-ALTER TABLE `Tags`
+ALTER TABLE `Tag`
   ADD CONSTRAINT `tags_ibfk_1` FOREIGN KEY (`fk_idLivre`) REFERENCES `Livre` (`idLivre`);
